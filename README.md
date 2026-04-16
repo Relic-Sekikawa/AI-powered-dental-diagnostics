@@ -19,7 +19,7 @@ cd AI-powered-dental-diagnostics
 docker compose up --build
 ```
 
-ブラウザで `http://localhost:8080` にアクセスしてください。
+ブラウザで `http://localhost:8081` にアクセスしてください。
 
 ## 機能
 
