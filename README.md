@@ -1,16 +1,35 @@
-# React + Vite
+# AI Powered Dental Diagnostics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+シンプルな歯診断アプリです。歯の写真をアップロードして、モックの診断結果を表示します。
 
-Currently, two official plugins are available:
+## 使い方
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### ローカル開発
 
-## React Compiler
+```bash
+cd AI-powered-dental-diagnostics
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Dockerで起動
 
-## Expanding the ESLint configuration
+```bash
+cd AI-powered-dental-diagnostics
+docker compose up --build
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ブラウザで `http://localhost:8080` にアクセスしてください。
+
+## 機能
+
+- 歯の写真アップロード
+- 結果ページへの遷移
+- モック診断結果の表示
+- 画像プレビュー表示
+
+## 今後の拡張
+
+- バックエンドAI診断APIの接続
+- 実際の画像解析ロジックの追加
+- 診断履歴の保存
